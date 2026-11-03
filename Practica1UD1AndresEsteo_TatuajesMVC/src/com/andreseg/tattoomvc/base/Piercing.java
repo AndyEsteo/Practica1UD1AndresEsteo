@@ -6,8 +6,11 @@ public class Piercing extends Servicio {
     private String zonaCuerpo;
     private String material;
 
-    public Piercing(String cliente, double precio, LocalDate fechaCita, String zonaCuerpo, String material) {
-        super(cliente, precio, fechaCita);
+    public Piercing() {
+    }
+
+    public Piercing(String cliente, String telefono, double precio, LocalDate fechaCita, String zonaCuerpo, String material) {
+        super(cliente, telefono, precio, fechaCita);
         this.zonaCuerpo = zonaCuerpo;
         this.material = material;
     }
@@ -30,6 +33,6 @@ public class Piercing extends Servicio {
 
     @Override
     public String toString() {
-        return "Piercing -> " + super.toString() + " | Zona: " + zonaCuerpo + " | Material: " + material;
+        return "PIERCING -> " + super.toString();
     }
 }

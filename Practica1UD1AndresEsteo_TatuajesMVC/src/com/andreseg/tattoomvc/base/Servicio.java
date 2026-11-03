@@ -2,13 +2,18 @@ package com.andreseg.tattoomvc.base;
 
 import java.time.LocalDate;
 
-public class Servicio {
+public abstract class Servicio {
     private String cliente;
+    private String telefono;
     private double precio;
     private LocalDate fechaCita;
 
-    public Servicio(String cliente, double precio, LocalDate fechaCita) {
+    public Servicio() {
+    }
+
+    public Servicio(String cliente, String telefono, double precio, LocalDate fechaCita) {
         this.cliente = cliente;
+        this.telefono = telefono;
         this.precio = precio;
         this.fechaCita = fechaCita;
     }
@@ -19,6 +24,14 @@ public class Servicio {
 
     public void setCliente(String cliente) {
         this.cliente = cliente;
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
     }
 
     public double getPrecio() {
@@ -39,6 +52,6 @@ public class Servicio {
 
     @Override
     public String toString() {
-        return "Cliente: " + cliente + " | Precio: " + precio + "€ | Fecha: " + fechaCita;
+        return cliente + " | Tlf: " + telefono + " | Fecha: " + fechaCita;
     }
 }

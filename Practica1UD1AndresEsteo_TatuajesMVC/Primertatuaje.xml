@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xml>
+    <Servicios>
+        <Tatuaje>
+            <cliente>Andres</cliente>
+            <telefono>1234</telefono>
+            <precio>120.0</precio>
+            <fechaCita>2026-11-03</fechaCita>
+            <estilo>Vikingo</estilo>
+            <tamanoCm>20</tamanoCm>
+        </Tatuaje>
+    </Servicios>
+</xml>

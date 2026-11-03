@@ -6,8 +6,11 @@ public class Tatuaje extends Servicio {
     private String estilo;
     private int tamanoCm;
 
-    public Tatuaje(String cliente, double precio, LocalDate fechaCita, String estilo, int tamanoCm) {
-        super(cliente, precio, fechaCita);
+    public Tatuaje() {
+    }
+
+    public Tatuaje(String cliente, String telefono, double precio, LocalDate fechaCita, String estilo, int tamanoCm) {
+        super(cliente, telefono, precio, fechaCita);
         this.estilo = estilo;
         this.tamanoCm = tamanoCm;
     }
@@ -30,6 +33,6 @@ public class Tatuaje extends Servicio {
 
     @Override
     public String toString() {
-        return "Tatuaje -> " + super.toString() + " | Estilo: " + estilo + " | Tamaño: " + tamanoCm + "cm";
+        return "TATUAJE -> " + super.toString();
     }
 }
